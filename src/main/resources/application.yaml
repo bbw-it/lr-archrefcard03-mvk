@@ -16,6 +16,19 @@ spring:
   jackson:
     serialization:
       indent-output: true
+
+# OpenAPI/Swagger Configuration
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+    tags-sorter: alpha
+    doc-expansion: none
+  default-produces-media-type: application/json
+  default-consumes-media-type: application/json
+
 logging:
   pattern:
     console: "%clr(%5p) %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:%wEx}"
