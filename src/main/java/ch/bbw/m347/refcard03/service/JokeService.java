@@ -1,13 +1,14 @@
 package ch.bbw.m347.refcard03.service;
 
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.EventListener;
+import org.springframework.stereotype.Service;
+
 import ch.bbw.m347.refcard03.datamodel.JokeEntity;
 import ch.bbw.m347.refcard03.datamodel.SectionEntity;
 import ch.bbw.m347.refcard03.repository.JokeRepository;
 import ch.bbw.m347.refcard03.repository.SectionRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.boot.context.event.ApplicationReadyEvent;
-import org.springframework.context.event.EventListener;
-import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
@@ -42,5 +43,10 @@ public class JokeService {
 			Was steht auf dem Grabstein eines Mathematikers?
 			"Damit hat er nicht gerechnet."\
 			""").setSection(black).setRating(3));
+		jokeRepository.save(new JokeEntity().setText("""
+		Warum dürfen Gehörlose keine Fallschirmspringer werden?  
+		Weil sie die Warnschreie nicht hören, wenn der Schirm nicht aufgeht. \
+    		""").setSection(black).setRating(3));
+
 	}
 }
