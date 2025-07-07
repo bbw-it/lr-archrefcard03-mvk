@@ -22,7 +22,7 @@ public class JokeService {
 		var flat = sectionRepository.save(new SectionEntity().setName("Flachwitze"));
 		var black = sectionRepository.save(new SectionEntity().setName("Schwarzer Humor"));
 		jokeRepository.save(new JokeEntity().setText("""
-			Kunde: "Ich möchte Ihren Chef sprechen!"
+			Kunde: "Ich möchte Ihren Boss sprechen!"
 			Sekretärin: "Geht leider nicht, er ist nicht da!"
 			Kunde: "Ich hab ihn doch durchs Fenster gesehen!"
 			Sekretärin: "Er Sie auch!"\
