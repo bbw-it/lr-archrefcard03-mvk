@@ -8,3 +8,6 @@ Building it with Gradle will put a fat-jar under `build/libs/*.jar`
 ```
 
 The application will start on port 8080.
+
+
+Readme erweitert
